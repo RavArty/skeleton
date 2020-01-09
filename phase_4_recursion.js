@@ -129,7 +129,6 @@ function mergeSort(array) {
 console.log(`mergeSort([4, 5, 2, 3, 1]) = ${mergeSort([4, 5, 2, 3, 1])}`);
 
 function subsets(array) {
-  debugger;
   if (array.length === 0) {
     return [[]];
   }
