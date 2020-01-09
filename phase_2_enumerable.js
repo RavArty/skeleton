@@ -23,9 +23,7 @@ Array.prototype.myReduce = function(fn, initValue) {
   let arr = this;
   if (!initValue) {
     initValue = arr[0];
-    console.log('init: ', initValue);
     arr = arr.slice(1);
-    console.log('arr: ', arr);
   }
 
   let result = initValue;
@@ -34,4 +32,4 @@ Array.prototype.myReduce = function(fn, initValue) {
 
   return result;
 };
-console.log(NUMS.myReduce((total, item) => total + item));
+console.log(NUMS.myReduce((total, item) => total + item, 2));
